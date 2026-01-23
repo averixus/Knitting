@@ -34,7 +34,7 @@
             "name": "Launch Server",
             "type": "coreclr",
             "request": "launch",
-            "program": "${env:VINTAGE_STORY}/VintagestoryServer.exe",
+            "program": "/usr/local/share/dotnet/x64/dotnet",
             "linux": {
                 "program": "${env:VINTAGE_STORY}/VintagestoryServer"
             },
@@ -43,12 +43,14 @@
             },
             "preLaunchTask": "build",
             "args": [
+                "/Applications/Vintage Story.app/Vintagestory",
                 "--tracelog",
                 "--addModPath",
                 "${workspaceFolder}/Knitting/bin/Debug/Mods",
                  "--addOrigin",
                  "${workspaceFolder}/Knitting/assets"
             ],
+            "targetArchitecture": "x86_64",
             "console": "internalConsole",
             "stopAtEntry": false
         },
@@ -57,7 +59,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build (Cake)",
-            "program": "${workspaceFolder}/CakeBuild/bin/Debug/net7.0/CakeBuild.dll",
+            "program": "${workspaceFolder}/CakeBuild/bin/Debug/net8.0/CakeBuild.dll",
             "args": [],
             "cwd": "${workspaceFolder}/CakeBuild",
             "stopAtEntry": false,
