@@ -1,0 +1,42 @@
+[
+    {
+        "ingredientPattern": "_K_,S_S",
+        "ingredients": {
+            "K": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "S": {"type": "item", "code": "game:stick"}
+        },
+        "width": 3,
+        "height": 2,
+        "output": {"type": "item", "code": "knitting:knittingneedles-stick"}
+    },
+    {
+        "ingredientPattern": "_K_,S_S",
+        "ingredients": {
+            "K": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "S": {"type": "item", "code": "game:bamboostakes"}
+        },
+        "width": 3,
+        "height": 2,
+        "output": {"type": "item", "code": "knitting:knittingneedles-bamboo"}
+    },
+        {
+        "ingredientPattern": "_K_,S_S",
+        "ingredients": {
+            "K": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "S": {"type": "item", "code": "game:bone"}
+        },
+        "width": 3,
+        "height": 2,
+        "output": {"type": "item", "code": "knitting:knittingneedles-bone"}
+    },
+        {
+        "ingredientPattern": "_K_,S_S",
+        "ingredients": {
+            "K": {"type": "item", "code": "game:knife-*", "isTool": true},
+            "S": {"type": "item", "code": "game:antler-*"}
+        },
+        "width": 3,
+        "height": 2,
+        "output": {"type": "item", "code": "knitting:knittingneedles-horn"}
+    }
+]

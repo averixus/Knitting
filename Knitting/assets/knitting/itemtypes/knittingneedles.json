@@ -1,0 +1,46 @@
+{
+    "code": "knittingneedles",
+    "class": "ItemKnittingNeedles",
+    "heldPriorityInteract": true,
+    "maxstacksize": 1,
+    "creativeinventory": {
+        "general": ["*"]
+    },
+    "attributes": {
+        "handbook": {
+            "extraSections": [{"title": "knitting:handbook-needles-title", "text": "knitting:handbook-needles-text"}]
+        }
+    },
+    "variantGroups": [
+        {"code": "material", "states": ["bamboo", "stick", "bone", "horn"]}
+    ],
+    "durabilityByType": {
+        "knittingneedles-stick": 50,
+        "knittingneedles-bamboo": 100,
+        "knittingneedles-bone": 150,
+        "knittingneedles-horn": 200
+    },
+    "shape": { "base": "knitting:knittingneedles" },
+    "textureByType": {
+        "knittingneedles-stick": {"base": "game:block/wood/debarked/oak"},
+        "knittingneedles-bamboo": {"base": "game:block/plant/bamboo/stem-brown"},
+        "knittingneedles-bone": {"base": "game:block/creature/bone"},
+        "knittingneedles-horn": {"base": "game:block/creature/bone-yellow"}
+    },
+    "tpHandTransform": {
+        "rotation": { "x": 0, "y": 9, "z": -4 },
+        "origin": { "x": 0.45, "y": 0.95, "z": 0.55 },
+        "scale": 0.4
+    },
+    "guiTransform": {
+		"rotation": { "x": 86, "y": -111, "z": 0 },
+		"origin": { "x": 0.4, "y": 0, "z": 0.5 },
+		"scale": 1.89
+	},
+    "groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0, "y": 0, "z": 0 },
+		"scale": 2.6
+	}
+}

@@ -1,0 +1,111 @@
+{
+	"editor": {
+		"backDropShape": "",
+		"collapsedPaths": "",
+		"allAngles": false,
+		"entityTextureMode": false,
+		"singleTexture": false,
+		"vsFormatConverted": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+		"base": [32, 32]
+	},
+	"elements": [
+		{
+			"name": "needle1",
+			"from": [1, 0, 5],
+			"to": [1, 0, 5],
+			"rotationOrigin": [1, 0, 5],
+			"rotationX": 0,
+			"rotationY": -25,
+			"rotationZ": 3,
+			"children": [
+				{
+					"name": "shaft1",
+					"from": [0.5, 0.25, -0.75],
+					"to": [13.5, 0.75, -0.25],
+					"rotationOrigin": [17.61684, -0.0564, 3.36952],
+					"uv": [0, 0],
+					"shade": true,
+					"faces": {
+						"north": {"texture": "#base", "uv": [5, 1.5, 5.5, 14.5], "rotation": 90, "autoUv": false, "snapUv": false},
+						"east": {"texture": "#base", "uv": [1.5, 1.5, 2, 2], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#base", "uv": [3, 2.5, 3.5, 15.5], "rotation": 90, "autoUv": false, "snapUv": false},
+						"west": {"texture": "#base", "uv": [0, 1.5, 0.5, 2], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#base", "uv": [2, 7, 2.5, 20], "rotation": 90, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#base", "uv": [4, 6.5, 4.5, 19.5], "rotation": 90, "autoUv": false, "snapUv": false}
+					},
+					"gradientShade": false,
+					"renderPass": 0
+				},
+				{
+					"name": "stopper1",
+					"from": [0, 0, -1],
+					"to": [0.5, 1, 0],
+					"rotationOrigin": [0, 0, 0],
+					"uv": [0, 0],
+					"shade": true,
+					"faces": {
+						"north": {"texture": "#base", "uv": [1.5, 1, 2, 2], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#base", "uv": [1, 1, 2, 2], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#base", "uv": [0, 1, 0.5, 2], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#base", "uv": [0, 1, 1, 2], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#base", "uv": [0, 0, 0.5, 1], "autoUv": false, "snapUv": false},
+						"down": {"texture": "#base", "uv": [0, 1, 0.5, 2], "autoUv": false, "snapUv": false}
+					},
+					"gradientShade": false,
+					"renderPass": 0
+				}
+			]
+		},
+		{
+			"name": "needle2",
+			"from": [0, 0, 10],
+			"to": [0, 0, 10],
+			"rotationOrigin": [0, 0, 10],
+			"rotationY": 7.5,
+			"children": [
+				{
+					"name": "shaft2",
+					"from": [1.5, 0.25, -0.75],
+					"to": [14.5, 0.75, -0.25],
+					"rotationOrigin": [1, 0, 0],
+					"uv": [0, 0],
+					"shade": true,
+					"faces": {
+						"north": {"texture": "#base", "uv": [1, 2.5, 1.5, 15.5], "rotation": 90, "autoUv": false, "snapUv": false},
+						"east": {"texture": "#base", "uv": [1.5, 1.5, 2, 2], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#base", "uv": [0, 6.5, 0.5, 19.5], "rotation": 90, "autoUv": false, "snapUv": false},
+						"west": {"texture": "#base", "uv": [0, 1.5, 0.5, 2], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#base", "uv": [7, 1, 7.5, 14], "rotation": 90, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#base", "uv": [6, 5.5, 6.5, 18.5], "rotation": 90, "autoUv": false, "snapUv": false}
+					},
+					"rotationZ": -1,
+					"gradientShade": false,
+					"renderPass": 0
+				},
+				{
+					"name": "stopper2",
+					"from": [1, 0, -1],
+					"to": [1.5, 1, 0],
+					"rotationOrigin": [0, 0, 0],
+					"uv": [0, 0],
+					"shade": true,
+					"faces": {
+						"north": {"texture": "#base", "uv": [1.5, 1, 2, 2], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#base", "uv": [1, 1, 2, 2], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#base", "uv": [0, 1, 0.5, 2], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#base", "uv": [0, 1, 1, 2], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#base", "uv": [0, 0, 0.5, 1], "autoUv": false, "snapUv": false},
+						"down": {"texture": "#base", "uv": [0, 1, 0.5, 2], "autoUv": false, "snapUv": false}
+					},
+					"gradientShade": false,
+					"renderPass": 0
+				}
+			]
+		}
+	],
+	"animations": []
+}

@@ -1,0 +1,40 @@
+[
+    {
+        "file": "game:itemtypes/resource/flaxtwine",
+        "op": "add",
+        "path": "/storageFlags",
+        "value": 257
+    },
+    {
+        "file": "game:recipes/grid/linen",
+        "op": "add",
+        "path": "/0/enabled",
+        "value": false
+    },
+    {
+        "file": "game:itemtypes/resource/flaxtwine",
+        "op": "addmerge",
+        "path": "/attributes/handbook",
+        "value": {
+        "extraSections": [
+            {
+            "title": "knitting:handbook-knit-twine-title",
+            "text": "knitting:handbook-knit-twine-text"
+            }
+        ]
+        }
+    },
+    {
+        "file": "game:blocktypes/cloth/linen",
+        "op": "add",
+        "path": "/attributes/handbook",
+        "value": {
+        "extraSections": [
+            {
+            "title": "knitting:handbook-knit-cloth-title",
+            "text": "knitting:handbook-knit-cloth-text"
+            }
+        ]
+        }
+    }
+]

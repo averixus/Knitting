@@ -1,0 +1,310 @@
+[
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:itemtypes/resource/twine",
+        "op": "add",
+        "path": "/storageFlags",
+        "value": 257
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:itemtypes/tool/knitting_needles",
+        "op": "add",
+        "path": "/enabled",
+        "value": false
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "knitting:recipes/grid/cloth",
+        "op": "add",
+        "path": "/-",
+        "value": {
+            "ingredientPattern": "CC",
+            "ingredients": {
+                "C": {"type": "item", "code": "wool:wool-cloth-*"} 
+            },
+            "width": 2,
+            "height": 1,
+            "output": {"type": "block", "code": "game:wool-{colour}", "quantity": 2}
+        }   
+    },
+    {
+        "dependsOn": [{"modid": "wool"}],
+        "file": "wool:itemtypes/resource/twine",
+        "op": "add",
+        "path": "/attributes/handbook/extraSectionsbyType/*/-",
+        "value": {
+            "title": "knitting:handbook-knit-twine-title",
+            "text": "knitting:handbook-knit-twine-text"
+        }
+    },
+    {
+        "dependsOn": [{"modid": "wool"}],
+        "file": "wool:blocktypes/cloth/wool",
+        "op": "add",
+        "path": "/attributes/handbook/extraSections/-",
+        "value": {
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+        }
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/cloth/saddle_blankets",
+        "op": "replace",
+        "path": "/0/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/cloth/saddle_blankets",
+        "op": "replace",
+        "path": "/6/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/foot",
+        "op": "replace",
+        "path": "/5/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/head",
+        "op": "replace",
+        "path": "/0/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/head",
+        "op": "replace",
+        "path": "/1/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/lowerbody",
+        "op": "replace",
+        "path": "/6/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/lowerbody",
+        "op": "replace",
+        "path": "/10/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/lowerbody",
+        "op": "replace",
+        "path": "/12/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/lowerbody",
+        "op": "replace",
+        "path": "/13/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/lowerbody",
+        "op": "replace",
+        "path": "/14/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/lowerbody",
+        "op": "replace",
+        "path": "/15/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/lowerbody",
+        "op": "replace",
+        "path": "/16/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/lowerbody",
+        "op": "replace",
+        "path": "/17/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/lowerbody",
+        "op": "replace",
+        "path": "/18/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/lowerbody",
+        "op": "replace",
+        "path": "/19/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/shoulder",
+        "op": "replace",
+        "path": "/1/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/shoulder",
+        "op": "replace",
+        "path": "/3/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/shoulder",
+        "op": "replace",
+        "path": "/4/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/sweaters",
+        "op": "replace",
+        "path": "/0/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/sweaters",
+        "op": "replace",
+        "path": "/1/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/sweaters",
+        "op": "replace",
+        "path": "/2/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/sweaters",
+        "op": "replace",
+        "path": "/3/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/sweaters",
+        "op": "replace",
+        "path": "/4/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/sweaters",
+        "op": "replace",
+        "path": "/5/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/sweaters",
+        "op": "replace",
+        "path": "/6/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/sweaters",
+        "op": "replace",
+        "path": "/7/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/sweaters",
+        "op": "replace",
+        "path": "/8/ingredients/N/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/upperbody",
+        "op": "replace",
+        "path": "/11/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/upperbodyover",
+        "op": "replace",
+        "path": "/0/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/upperbodyover",
+        "op": "replace",
+        "path": "/1/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/waist",
+        "op": "replace",
+        "path": "/3/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/clothing/wool/waist",
+        "op": "replace",
+        "path": "/4/ingredients/K/code",
+        "value": "knitting:knittingneedle-*"
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/tool/kneedle",
+        "op": "add",
+        "path": "/0/enabled",
+        "value": false
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/tool/kneedle",
+        "op": "add",
+        "path": "/1/enabled",
+        "value": false
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/tool/kneedle",
+        "op": "add",
+        "path": "/2/enabled",
+        "value": false
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/cloth/woolcloth",
+        "op": "add",
+        "path": "/1/enabled",
+        "value": false
+    },
+    {
+        "dependson": [{"modid": "wool"}],
+        "file": "wool:recipes/grid/cloth/woolcloth",
+        "op": "add",
+        "path": "/0/enabled",
+        "value": false
+    }
+]

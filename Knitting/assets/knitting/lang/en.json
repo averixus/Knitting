@@ -1,0 +1,14 @@
+{
+    "knitting:item-knittingneedles-stick": "Wood knitting needles",
+    "knitting:item-knittingneedles-bamboo": "Bamboo knitting needles",
+    "knitting:item-knittingneedles-bone": "Bone knitting needles",
+    "knitting:item-knittingneedles-horn": "Horn knitting needles",
+    "knitting:knit": "Put enough twine in offhand, then hold interact to knit cloth",
+    "knitting:knitting-need-twine": "More twine needed in offhand",
+    "knitting:handbook-knit-twine-title": "Knitting",
+    "knitting:handbook-knit-twine-text": "This material can be knitted into cloth using knitting needles.",
+    "knitting:handbook-knit-cloth-title": "Knitting",
+    "knitting:handbook-knit-cloth-text": "This material can be knitted from twine using knitting needles.",
+    "knitting:handbook-needles-title": "Knitting",
+    "knitting:handbook-needles-text": "This item can knit twine into cloth."
+}
