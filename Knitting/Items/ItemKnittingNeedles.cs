@@ -188,7 +188,6 @@ namespace Knitting.Items
             if (twineSlot != null && !twineSlot.Empty) {
 
                 ItemStack twine = twineSlot.Itemstack;
-                Console.WriteLine("twine stack " + twine.ToString());
                 if (CLOTH_OUTPUTS.ContainsKey(twine.Item))
                 {
                         return twine.StackSize >= TWINE_PER_CLOTH;
