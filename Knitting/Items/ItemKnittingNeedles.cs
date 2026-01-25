@@ -9,6 +9,7 @@ using Vintagestory.API.MathTools;
 using Vintagestory.API.Util;
 using System.Collections.Generic;
 using System.Reflection.Metadata;
+using System.Net;
 
 namespace Knitting.Items
 {
@@ -16,6 +17,8 @@ namespace Knitting.Items
     {
         private const int TWINE_PER_CLOTH = 4;
         private const float SECONDS_PER_CLOTH = 4.0f;
+
+        private const float SECONDS_PER_CLOTH_SITTING = 3.0f;
         private static Dictionary<CollectibleObject, CollectibleObject> CLOTH_OUTPUTS = new Dictionary<CollectibleObject, CollectibleObject>();
 
         private ILoadedSound knittingSound;
@@ -39,10 +42,17 @@ namespace Knitting.Items
 
         public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handHandling)
         {
-            
+
             // Do nothing if invalid player
             IPlayer player = (byEntity as EntityPlayer)?.Player;
             if (player == null) return;
+
+            // Attempt ground storage
+            if (byEntity.Controls.ShiftKey)
+            {
+                base.OnHeldInteractStart(slot, byEntity, blockSel, entitySel, firstEvent, ref handHandling);
+                return;
+            }
 
             // Check for enough knittable twine
             if (!CanKnit(byEntity.LeftHandItemSlot))
@@ -87,7 +97,7 @@ namespace Knitting.Items
         {
             if (CanKnit(byEntity.LeftHandItemSlot))
             {
-                return secondsUsed < SECONDS_PER_CLOTH;
+                return secondsUsed < GetKnitTime(byEntity as EntityPlayer);
             } 
             else 
             {
@@ -108,7 +118,7 @@ namespace Knitting.Items
         {
 
             // Do nothing if stopped early
-            if (secondsUsed < SECONDS_PER_CLOTH) return;
+            if (secondsUsed < GetKnitTime(byEntity as EntityPlayer)) return;
 
             // Do nothing if invalid player
             IPlayer player = (byEntity as EntityPlayer)?.Player;
@@ -194,6 +204,11 @@ namespace Knitting.Items
                 }
             }
             return false;
+        }
+
+        private static float GetKnitTime(EntityPlayer player)
+        {
+               return (player.Controls.FloorSitting) ? SECONDS_PER_CLOTH_SITTING : SECONDS_PER_CLOTH;
         }
     }
 }

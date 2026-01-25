@@ -1,16 +1,6 @@
 {
     "code": "knittingneedles",
     "class": "ItemKnittingNeedles",
-    "heldPriorityInteract": true,
-    "maxstacksize": 1,
-    "creativeinventory": {
-        "general": ["*"]
-    },
-    "attributes": {
-        "handbook": {
-            "extraSections": [{"title": "knitting:handbook-needles-title", "text": "knitting:handbook-needles-text"}]
-        }
-    },
     "variantGroups": [
         {"code": "material", "states": ["bamboo", "stick", "bone", "horn"]}
     ],
@@ -20,6 +10,31 @@
         "knittingneedles-bone": 150,
         "knittingneedles-horn": 200
     },
+    "heldPriorityInteract": true,
+    "maxstacksize": 1,
+    "creativeinventory": {
+        "general": ["*"]
+    },
+    "attributes": {
+        "handbook": {
+            "extraSections": [{"title": "knitting:handbook-needles-title", "text": "knitting:handbook-needles-text"}]
+        },
+        "displaycaseable": true,
+		"shelvable": true,
+		"onDisplayTransform": {
+			"translation": { "x": -0.07, "y": -0.25, "z": 0 },
+			"rotation": { "x": 0, "y": 40, "z": 0 },
+			"scale": 0.5
+		},
+		"groundStorageTransform": {
+			"translation": { "x": 0, "y": -0.25, "z": 0 },
+			"rotation": { "x": 0, "y": 138, "z": 0 },
+			"scale": 0.5
+		}
+    },
+    "behaviors": [
+        { "name": "GroundStorable", "properties": { "layout": "Quadrants", "sprintKey": true, "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 } } }
+    ],
     "shape": { "base": "knitting:knittingneedles" },
     "textureByType": {
         "knittingneedles-stick": {"base": "game:block/wood/debarked/oak"},
