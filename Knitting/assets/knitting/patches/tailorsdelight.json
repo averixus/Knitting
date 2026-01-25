@@ -1,0 +1,153 @@
+[
+    {
+        "dependson": [{"modid": "tailorsdelight"}],
+        "file": "tailorsdelight:recipes/grid/cloth/coloredcloth",
+        "op": "add",
+        "path": "/0/enabled",
+        "value": false
+    },
+    {
+        "dependson": [{"modid": "tailorsdelight"}],
+        "file": "tailorsdelight:recipes/grid/cloth/coloredcloth",
+        "op": "add",
+        "path": "/1/enabled",
+        "value": false
+    },
+    {
+        "dependson": [{"modid": "tailorsdelight"}],
+        "file": "tailorsdelight:itemtypes/resource/twine",
+        "op": "add",
+        "path": "/storageFlags",
+        "value": 257
+    },
+    {
+        "dependsOn": [{"modid": "tailorsdelight"}],
+        "file": "tailorsdelight:itemtypes/resource/twine",
+        "op": "add",
+        "path": "/attributes/handbook/extraSectionsByType",
+        "value": {
+            "*-blue": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-red": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-yellow": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-green": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-purple": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-pink": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-orange": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-brown": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-gray": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-black": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-white": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-darkgreen": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-darkblue": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-darkred": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }],
+            "*-darkbrown": [{
+                "title": "knitting:handbook-knit-twine-title",
+                "text": "knitting:handbook-knit-twine-text"
+            }]
+        }
+    },
+    {
+        "dependson": [{"modid": "tailorsdelight"}],
+        "file": "tailorsdelight:itemtypes/resource/cloth",
+        "op": "add",
+        "path": "/attributes/handbook/extraSections",
+        "value": [{
+            "title": "knitting:handbook-knit-cloth-title",
+            "text": "knitting:handbook-knit-cloth-text"
+        }]
+    },
+    {
+        "dependsOn": [{"modid": "tailorsdelight"}],
+        "file": "game:itemtypes/resources/cloth",
+        "op": "add",
+        "path": "/attributes/handbook/extraSectionsByType",
+        "value": {
+            "*-blue": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }],
+            "*-red": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }],
+            "*-yellow": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }],
+            "*-green": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }],
+            "*-purple": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }],
+            "*-pink": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }],
+            "*-orange": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }],
+            "*-brown": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }],
+            "*-gray": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }],
+            "*-black": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }],
+            "*-white": [{
+                "title": "knitting:handbook-knit-cloth-title",
+                "text": "knitting:handbook-knit-cloth-text"
+            }]
+        }
+    }
+]

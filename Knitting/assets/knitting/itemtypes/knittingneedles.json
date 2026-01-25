@@ -39,8 +39,8 @@
     "textureByType": {
         "knittingneedles-stick": {"base": "game:block/wood/debarked/oak"},
         "knittingneedles-bamboo": {"base": "game:block/plant/bamboo/stem-brown"},
-        "knittingneedles-bone": {"base": "game:block/creature/bone"},
-        "knittingneedles-horn": {"base": "game:block/creature/bone-yellow"}
+        "knittingneedles-bone": {"base": "game:block/creature/bone-yellow"},
+        "knittingneedles-horn": {"base": "game:block/creature/bone"}
     },
     "tpHandTransform": {
         "rotation": { "x": 0, "y": 9, "z": -4 },

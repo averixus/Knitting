@@ -33,11 +33,33 @@ namespace Knitting.Items
 
                 foreach (string type in types) {
                     
-                    CLOTH_OUTPUTS.Add(api.World.GetItem(new AssetLocation("wool:twine-wool-" + type)), api.World.GetBlock(new AssetLocation("wool:wool-" + type)));
+                    CLOTH_OUTPUTS.Add(api.World.GetItem(new AssetLocation("wool:twine-wool-" + type)),
+                        api.World.GetBlock(new AssetLocation("wool:wool-" + type)));
+                }
+            }
+
+            if (api.ModLoader.IsModEnabled("tailorsdelight"))
+            {
+                string[] vstypes = ["black", "blue", "brown", "gray", "green",
+                    "orange", "pink", "purple", "red", "white", "yellow"];
+
+                foreach (string vstype in vstypes)
+                {
+                    CLOTH_OUTPUTS.Add(api.World.GetItem(new AssetLocation("tailorsdelight:twine-" + vstype)),
+                        api.World.GetItem(new AssetLocation("game:cloth-" + vstype)));
+                }
+
+                string[] tdtypes = ["darkblue", "darkbrown", "darkgreen", "darkred"];
+
+                foreach (string tdtype in tdtypes)
+                {
+                    CLOTH_OUTPUTS.Add(api.World.GetItem(new AssetLocation("tailorsdelight:twine-" + tdtype)),
+                        api.World.GetItem(new AssetLocation("tailorsdelight:cloth-" + tdtype)));
                 }
             }
             
-            CLOTH_OUTPUTS.Add(api.World.GetItem(new AssetLocation("game:flaxtwine")), api.World.GetBlock(new AssetLocation("game:linen-normal-down")));
+            CLOTH_OUTPUTS.Add(api.World.GetItem(new AssetLocation("game:flaxtwine")),
+                api.World.GetBlock(new AssetLocation("game:linen-normal-down")));
         }
 
         public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handHandling)
