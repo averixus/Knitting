@@ -220,7 +220,7 @@ namespace Knitting.Items
             if (twineSlot != null && !twineSlot.Empty) {
 
                 ItemStack twine = twineSlot.Itemstack;
-                if (CLOTH_OUTPUTS.ContainsKey(twine.Item))
+                if (CLOTH_OUTPUTS.ContainsKey(twine.Collectible))
                 {
                         return twine.StackSize >= TWINE_PER_CLOTH;
                 }
