@@ -1,0 +1,14 @@
+{
+    "knitting:item-knittingneedles-stick": "Деревянные спицы",
+    "knitting:item-knittingneedles-bamboo": "Бамбуковые спицы",
+    "knitting:item-knittingneedles-bone": "Костяные спицы",
+    "knitting:item-knittingneedles-horn": "Спицы из рога",
+    "knitting:knit": "Возьмите нужное количество шпагата в левую руку, затем удерживайте ПКМ, что начать вязать полотно",
+    "knitting:knitting-need-twine": "Недостаточно шпагата",
+    "knitting:handbook-knit-twine-title": "Вязание",
+    "knitting:handbook-knit-twine-text": "Этот материал можно связать в ткань, используя спицы",
+    "knitting:handbook-knit-cloth-title": "Вязание",
+    "knitting:handbook-knit-cloth-text": "Этот материал можно связать из льняного шпагата, используя спицы",
+    "knitting:handbook-needles-title": "Вязание",
+    "knitting:handbook-needles-text": "Этот предмет позволяет связать льняной шпагат в ткань"
+}
