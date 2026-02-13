@@ -17,10 +17,8 @@ namespace Knitting.Items
     {
         private const int TWINE_PER_CLOTH = 4;
         private const float SECONDS_PER_CLOTH = 4.0f;
-
         private const float SECONDS_PER_CLOTH_SITTING = 3.0f;
         private static Dictionary<CollectibleObject, CollectibleObject> CLOTH_OUTPUTS = new Dictionary<CollectibleObject, CollectibleObject>();
-
         private ILoadedSound knittingSound;
 
         public static void MapOutputs(ICoreAPI api)

@@ -37,7 +37,7 @@
         "dependson": [{"modid": "wool"}],
         "file": "wool:recipes/grid/cloth/saddle_blankets",
         "op": "replace",
-        "path": "/0/ingredients/K/code",
+        "path": "/1/ingredients/K/code",
         "value": "knitting:knittingneedles-*"
     },
     {
