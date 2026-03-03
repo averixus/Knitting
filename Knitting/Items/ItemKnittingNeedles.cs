@@ -16,8 +16,6 @@ namespace Knitting.Items
     public class ItemKnittingNeedles : Item
     {
         private const int TWINE_PER_CLOTH = 4;
-        private const float SECONDS_PER_CLOTH = 4.0f;
-        private const float SECONDS_PER_CLOTH_SITTING = 3.0f;
         private static Dictionary<CollectibleObject, CollectibleObject> CLOTH_OUTPUTS = new Dictionary<CollectibleObject, CollectibleObject>();
         private ILoadedSound knittingSound;
 
@@ -228,7 +226,7 @@ namespace Knitting.Items
 
         private static float GetKnitTime(EntityPlayer player)
         {
-               return (player.Controls.FloorSitting) ? SECONDS_PER_CLOTH_SITTING : SECONDS_PER_CLOTH;
+               return (player.Controls.FloorSitting) ? KnittingModSystem.config.sittingKnitTime : KnittingModSystem.config.standingKnitTime;
         }
     }
 }
