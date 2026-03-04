@@ -98,7 +98,7 @@ namespace Knitting.Items
                     knittingSound = (api as ICoreClientAPI).World.LoadSound(new SoundParams()
                     {
                         Location = new AssetLocation("knitting:sounds/knitting"),
-                        ShouldLoop = false,
+                        ShouldLoop = true,
                         Position = byEntity.Pos.XYZ.ToVec3f(),
                         DisposeOnFinish = true,
                         Volume = 0.5f,
