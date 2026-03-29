@@ -26,15 +26,32 @@
     },
     {
         "file": "game:blocktypes/cloth/linen",
+        "op": "remove",
+        "path": "/attributes"
+    },
+    {
+        "file": "game:blocktypes/cloth/linen",
         "op": "add",
-        "path": "/attributes/handbook",
+        "path": "/attributesByType",
         "value": {
-        "extraSections": [
-            {
-            "title": "knitting:handbook-knit-cloth-title",
-            "text": "knitting:handbook-knit-cloth-text"
+            "*-normal-*": {
+                "handbook": {
+                    "groupBy": ["linen-*"],
+                    "extraSections": [
+                            {
+                            "title": "knitting:handbook-knit-cloth-title",
+                            "text": "knitting:handbook-knit-cloth-text"
+                            }
+                    ]
+                }
+            },
+            "*": {
+                "attachas3d": true,
+                "clothingRepairStrength": 0.5,
+                "handbook": {
+                    "groupBy": ["linen-*"]
+                }
             }
-        ]
         }
     }
 ]
