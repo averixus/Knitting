@@ -1,0 +1,18 @@
+[
+    {
+       "dependson": [{"modid": "butchering"}],
+       "file": "knitting:recipes/knittingneedles",
+        "op": "add",
+        "path": "/-",
+        "value": {
+            "ingredientPattern": "_K_,S_S",
+            "ingredients": {
+                "K": {"type": "item", "code": "game:knife-*", "isTool": true},
+                "S": {"type": "item", "code": "butchering:ivory-*"}
+            },
+            "width": 3,
+            "height": 2,
+            "output": {"type": "item", "code": "knitting:knittingneedles-horn"}
+        }
+    }
+]

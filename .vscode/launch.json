@@ -13,13 +13,13 @@
                 "program": "${env:VINTAGE_STORY}/Vintagestory"
             },
             "osx": {
-                "program": "${env:VINTAGE_STORY}/Vintagestory"
+                "program": "/usr/local/share/dotnet/x64/dotnet"
             },
             "preLaunchTask": "build",
             "args": [
                 // "--playStyle" , "preset-surviveandbuild",
                 // "--openWorld" , "modding test world",
-                "/Applications/Vintage Story.app/Vintagestory",
+                "${env:VINTAGE_STORY}/Vintagestory.dll",
                 "--tracelog",
                 "--addModPath",
                 "${workspaceFolder}/Knitting/bin/Debug/Mods",
@@ -34,7 +34,7 @@
             "name": "Launch Server",
             "type": "coreclr",
             "request": "launch",
-            "program": "/usr/local/share/dotnet/x64/dotnet",
+            "program": "${env:VINTAGE_STORY}/VintagestoryServer.exe",
             "linux": {
                 "program": "${env:VINTAGE_STORY}/VintagestoryServer"
             },
@@ -43,14 +43,12 @@
             },
             "preLaunchTask": "build",
             "args": [
-                "/Applications/Vintage Story.app/Vintagestory",
                 "--tracelog",
                 "--addModPath",
                 "${workspaceFolder}/Knitting/bin/Debug/Mods",
                  "--addOrigin",
                  "${workspaceFolder}/Knitting/assets"
             ],
-            "targetArchitecture": "x86_64",
             "console": "internalConsole",
             "stopAtEntry": false
         },
@@ -59,7 +57,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build (Cake)",
-            "program": "${workspaceFolder}/CakeBuild/bin/Debug/net8.0/CakeBuild.dll",
+            "program": "${workspaceFolder}/CakeBuild/bin/Debug/CakeBuild.dll",
             "args": [],
             "cwd": "${workspaceFolder}/CakeBuild",
             "stopAtEntry": false,
