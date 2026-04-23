@@ -1,7 +1,7 @@
 [
     {
        "dependson": [{"modid": "butchering"}],
-       "file": "knitting:recipes/knittingneedles",
+       "file": "knitting:recipes/grid/knittingneedles",
         "op": "add",
         "path": "/-",
         "value": {
