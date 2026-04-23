@@ -13,7 +13,7 @@
                 "program": "${env:VINTAGE_STORY}/Vintagestory"
             },
             "osx": {
-                "program": "/usr/local/share/dotnet/x64/dotnet"
+                "program": "${env:VINTAGE_STORY}/Vintagestory"
             },
             "preLaunchTask": "build",
             "args": [
