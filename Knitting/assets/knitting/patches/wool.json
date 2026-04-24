@@ -17,7 +17,7 @@
         "dependsOn": [{"modid": "wool"}],
         "file": "wool:itemtypes/resource/twine",
         "op": "add",
-        "path": "/attributes/handbook/extraSectionsbyType/*/-",
+        "path": "/attributes/handbook/extraSections/-",
         "value": {
             "title": "knitting:handbook-knit-twine-title",
             "text": "knitting:handbook-knit-twine-text"
