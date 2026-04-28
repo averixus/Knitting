@@ -14,9 +14,19 @@
         "value": false
     },
     {
-        "dependsOn": [{"modid": "wool"}],
+        "dependsOn": [{"modid": "wool"}, {"modid": "spinningwheel", "invert": true}],
         "file": "wool:itemtypes/resource/twine",
-        "op": "add",
+        "op": "addmerge",
+        "path": "/attributes/handbook/extraSectionsbyType/*/-",
+        "value": {
+            "title": "knitting:handbook-knit-twine-title",
+            "text": "knitting:handbook-knit-twine-text"
+        }
+    },
+    {
+        "dependsOn": [{"modid": "wool"}, {"modid": "spinningwheel"}],
+        "file": "wool:itemtypes/resource/twine",
+        "op": "addmerge",
         "path": "/attributes/handbook/extraSections/-",
         "value": {
             "title": "knitting:handbook-knit-twine-title",
