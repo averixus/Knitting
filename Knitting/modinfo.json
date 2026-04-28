@@ -7,8 +7,8 @@
         "Averixus"
     ],
     "description": "Use knitting needles instead of the crafting grid to make cloth from twine.",
-    "version": "1.4.1",
+    "version": "2.0.0",
     "dependencies": {
-        "game": "1.21.0"
+        "game": "1.22.0"
     }
 }
