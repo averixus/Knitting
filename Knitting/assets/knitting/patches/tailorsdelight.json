@@ -100,7 +100,7 @@
     },
     {
         "dependsOn": [{"modid": "tailorsdelight"}],
-        "file": "game:itemtypes/resources/cloth",
+        "file": "game:itemtypes/resource/cloth",
         "op": "add",
         "path": "/attributes/handbook/extraSectionsByType",
         "value": {
