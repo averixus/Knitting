@@ -15,6 +15,13 @@
     },
     {
         "dependson": [{"modid": "tailorsdelight"}],
+        "file": "tailorsdelight:recipes/grid/twine",
+        "op": "add",
+        "path": "/1/enabled",
+        "value": false
+    },
+    {
+        "dependson": [{"modid": "tailorsdelight"}],
         "file": "tailorsdelight:itemtypes/resource/twine",
         "op": "add",
         "path": "/storageFlags",
